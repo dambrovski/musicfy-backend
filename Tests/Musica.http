@@ -1,0 +1,30 @@
+### Cadastrar musica
+
+POST https://localhost:5001/api/musica/create
+Content-Type: application/json
+
+{
+"nome" : "Vida Loka pt 1",
+"cantor" : "Racionais MC",
+"anoLancamento": 1999,
+"estilo": "RAP"
+}
+
+### Listar musicas
+GET https://localhost:5001/api/musica/list
+
+### Buscar musica pelo id
+GET https://localhost:5001/api/musica/getbyid/1
+
+### Alterar musica
+PUT https://localhost:5001/api/musica/update
+Content-Type: application/json
+
+{
+    "Id": 1,
+    "nome" : "Bolacha alterado 2",
+    "Preco" : 3.5
+}
+
+### Deletar musica
+DELETE https://localhost:5001/api/musica/delete/Bolacha
